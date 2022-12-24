@@ -88,15 +88,17 @@
      <div class="boxes">
         <h2>Question 4 .Write a JavaScript function to retrieve all the names of object's own and inherited properties </h2>
         <pre class="code">
-        var obj = {
-            name : "gowri ",
-            company : "wipro",
-            Stream : "Computer Sceince",
-            
-        }
-        result = Object.keys(obj)
-        console.log(result);
-          
+       function person1(first,last,age,eye){
+    this.firstname1=first;
+    this.lastname1=last;
+    this.age=age;
+    this.eyecolor=eye;
+}
+
+const myfriend1=new person1("john","doe","50","blue");
+const myfriend2=new person1("sally","rally","30","brown");
+document.getElementById("demo1").innerHTML=myfriend1.age
+document.getElementById("demo2").innerHTML=myfriend2.age
            
         </pre>
      </div>
